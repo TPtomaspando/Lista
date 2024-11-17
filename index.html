@@ -13,7 +13,27 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-light py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Lista de Tareas</h1>
+
+      <!-- Input para ingresar tareas y botón de agregar -->
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="taskInput"
+          class="form-control"
+          placeholder="Ingresa una tarea"
+          aria-label="Ingresa una tarea"
+        />
+        <button class="btn btn-primary" id="addTaskBtn" type="button">
+          Agregar Tarea
+        </button>
+      </div>
+
+      <!-- Lista de tareas -->
+      <ul id="taskList" class="list-group"></ul>
+    </div>
     <script src="./js/lista.js"></script>
   </body>
 </html>
